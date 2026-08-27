@@ -1,0 +1,19 @@
+# Direct dependencies for the QALYPSO VQA tutorial.
+# Tested on Python 3.12 with the exact versions noted in the comments.
+
+qiskit~=2.5                 # tested with 2.5.2
+qiskit-aer~=0.17            # tested with 0.17.2
+qiskit-ibm-runtime~=0.49    # tested with 0.49.0
+qiskit-algorithms~=0.4      # tested with 0.4.0
+
+numpy~=2.0
+scipy~=1.14
+matplotlib~=3.9
+pylatexenc~=2.10            # required by QuantumCircuit.draw("mpl")
+
+notebook~=7.2
+ipywidgets~=8.1
+
+# Only needed to regenerate data/h2_sto3g.npz. The generated file ships with the
+# repository, so participants do not need this and it stays commented out.
+# pyscf~=2.6
