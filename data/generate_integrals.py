@@ -1,4 +1,4 @@
-"""Generate the molecular integral data used by 3_Chemistry.ipynb.
+"""Generate the molecular integral data used by 4_Chemistry.ipynb.
 
 This is the only part of the tutorial that needs PySCF. The output file
 (h2_sto3g.npz, about 5 kB) ships with the repository so that participants do not
