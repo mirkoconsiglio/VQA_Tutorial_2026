@@ -29,6 +29,15 @@ Notebook 3 assumes notebooks 1 and 2 have been covered. It is aimed at physics s
 and expects second quantisation at the level of an undergraduate quantum mechanics
 course. Section 3 is the longest at roughly 30 minutes; section 6 is the natural one to
 drop if you are running short of time.
+
+### What notebook 4 covers
+
+1. **Electronic structure.** Born-Oppenheimer, STO-3G, and what the one- and two-electron integrals are. Loads them from the shipped .npz, so nobody installs PySCF during your session.
+2. **Second quantisation.** The anticommutation relations doing the work of antisymmetry.
+3. **Jordan-Wigner.** Students implement a_p as Pauli strings, then assemble the 15-term four-qubit Hamiltonian. Exercise 1 is verifying {a_p, a_q†} = δ_pq numerically. The payoff: the lowest eigenvalue matches FCI to 1.3×10⁻¹⁵ Ha.
+4. **Symmetry tapering.** Exercise 2 confirms [H, Z₀Z₁] = 0, then Bravyi-style tapering to two qubits, still exact.
+5. **Problem-inspired ansatz.** The ground state lives in span{|00⟩,|11⟩}, so Ry(θ) plus a CNOT is exact. One parameter, so you can plot the entire cost landscape, which is a nice foil for the barren-plateau figure in notebook 1.
+6. **Dissociation curve.** Rebuild the Hamiltonian at each of 42 bond lengths, warm-start from the previous geometry, plot against HF and FCI with an error panel.
  
 ### Exercises and solutions
  
